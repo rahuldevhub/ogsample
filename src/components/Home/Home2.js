@@ -2,6 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import Particle from "../Particle";
+import About from "../About/About";
+
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -12,52 +15,61 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
+      <Particle />
+        
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+          {/* <Col md={8} > */}
+          <div className="home-about-description">
+            {/* <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
+            </h1> */}
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Passionate about exploring new technologies and I have at least learnt
+              something, while continuously expanding knowledge across various domains.
+              {/* 🤷‍♂️ */}
               <br />
-              <br />I am fluent in classics like
+              <br />Experienced in delivering tailored solutions for diverse projects, from web development to design, ensuring
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> client satisfaction. </b>
               </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
+              
+              Proficient in building robust web applications using&nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                {" "}
                 <b className="purple">
-                  Blockchain.
+                  MongoDB, Express.js, React.js, and Node.js.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              Skilled in designing intuitive and visually appealing &nbsp;
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
+                <b className="purple">user interfaces </b>  with a focus on
               </i>
-              &nbsp; like
+
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple">    user experience </b>
               </i>
+
+
+              and modern design principles.
+
+
+
             </p>
-          </Col>
-          <Col md={4} className="myAvtar">
+            </div>
+          {/* </Col> */}
+          {/* <Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
-          </Col>
+          </Col> */}
         </Row>
+        <About/>
+        {/* <Projects/> */}
+
+{/* <Home3/> */}
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
@@ -67,7 +79,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/rahuldevhub"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,7 +89,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://x.com/rahulriyaz_"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +99,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/rahulrajendran1/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +109,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/iamrahul.r1/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -109,6 +121,7 @@ function Home2() {
           </Col>
         </Row>
       </Container>
+
     </Container>
   );
 }
