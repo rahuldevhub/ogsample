@@ -4,6 +4,7 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import Particle from "../Particle";
 import About from "../About/About";
+import Home3 from "./Home3";
 
 import {
   AiFillGithub,
@@ -69,7 +70,7 @@ function Home2() {
         <About/>
         {/* <Projects/> */}
 
-{/* <Home3/> */}
+<Home3/>
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
