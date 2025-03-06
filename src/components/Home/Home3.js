@@ -15,6 +15,17 @@ import female3 from '../../Assets/People/female3.png'
 import female4 from '../../Assets/People/female4.png'
 import female5 from '../../Assets/People/female5.png'
 
+// import designpencil from '../../Assets/serviceic/designpencil.png'
+// import web from '../../Assets/serviceic/webs.png'
+// import app from '../../Assets/serviceic/appdev.png'
+// import training from '../../Assets/serviceic/training.png'
+// import social from '../../Assets/serviceic/marketing.png'
+// import testing from '../../Assets/serviceic/test.png'
+// import ar from '../../Assets/serviceic/ar.png'
+
+// import { FreeMode } from 'swiper/modules';
+import Home4 from './Home4';
+
 const Home3 = () => {
     let ClientFeedbackcontent = [
         {
@@ -61,7 +72,8 @@ const Home3 = () => {
             description: "Rahul is highly skilled if you give him the ability to be creative. He understands the users experience. If you take just a few extra minutes and provide specific directions in regards to exact wording and what you in-vision, even if you draw on a screen shot or a piece of paper just be specific and you will receive great results."
           },
     
-      ]
+      ];
+     
     return (
         <div>
              <section>
@@ -77,14 +89,14 @@ const Home3 = () => {
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 3000,
+                    delay: 4000,
                     disableOnInteraction: false,
                 }}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
+                // pagination={{
+                //     clickable: true,
+                // }}
+                navigation={false}
+                modules={[Autoplay]}
                 className="mySwiper"
             >
                 {ClientFeedbackcontent.map((ClientFeedbackcontent) => (
@@ -106,6 +118,12 @@ const Home3 = () => {
             </Container>
             </Container>
         </section>
+
+
+     
+<Home4/>
+
+
         </div>
     )
 }

@@ -1,10 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
+// import myImg from "../../Assets/avatar.svg";
+// import Tilt from "react-parallax-tilt";
 import Particle from "../Particle";
-import About from "../About/About";
-import Home3 from "./Home3";
+import { FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/scrollbar';
+import '../../style.css';
 
 import {
   AiFillGithub,
@@ -12,6 +16,9 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import About from "../About/About";
+// import Projects from "../Projects/Projects";
+import Home3 from "./Home3";
 
 function Home2() {
   return (
@@ -21,10 +28,20 @@ function Home2() {
       <Container>
         <Row>
           {/* <Col md={8} > */}
+
+
+          <Swiper
+        direction={'vertical'}
+        slidesPerView={'auto'}
+        freeMode={true}
+        scrollbar={true}
+        mousewheel={true}
+        modules={[FreeMode, Scrollbar, Mousewheel]}
+        className="mySwiper"
+      >
+             <SwiperSlide>
           <div className="home-about-description">
-            {/* <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1> */}
+            {/* <h1 style={{ fontSize: "2.6em" }}>LET ME <span className="purple"> INTRODUCE </span> MYSELF</h1> */}
             <p className="home-about-body">
               Passionate about exploring new technologies and I have at least learnt
               something, while continuously expanding knowledge across various domains.
@@ -59,7 +76,12 @@ function Home2() {
 
 
             </p>
+            
+            
             </div>
+            </SwiperSlide>
+            </Swiper>
+
           {/* </Col> */}
           {/* <Col md={4} className="myAvtar">
             <Tilt>

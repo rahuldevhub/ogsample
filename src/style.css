@@ -888,45 +888,6 @@ button:focus {
 
 
 
-
-
-
-
-
-.swiper {
-  margin-top: 00rem;
-  width: 100%;
-  height: 40rem;
-}
-
-.swiper-slide {
-  text-align: center;
-  /* font-size: 18px; */
-  background: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-.swiper-button-prev {
-  color: #68187a !important;
-}
-
-.swiper-button-next {
-  color: #68187a !important;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: rebeccapurple !important;
-  border: solid 1px rebeccapurple !important;
-}
-
 .DesignDevApp-content-title {
   font-family: 'Alata', sans-serif;
   font-weight: 500;
@@ -955,14 +916,112 @@ button:focus {
 
 }
 
+
+
+.swipercard {
+  background-color: rgba(73, 73, 73, 0.801);
+  text-align: left;
+  border: 1px solid #a24dd386;
+  border-radius: .5em;
+  margin-top: 4em;
+  width: fit-content;
+}
+
+.swipercontent {
+  /* font-family: 'Alata', sans-serif; */
+  /* margin: 1em; */
+text-align: center;
+padding-top: 2rem;
+padding-bottom: 2rem;
+padding-left: 3.5rem;
+padding-right: 3.5rem;
+}
+
+.swipercontent h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+  /* font-family: 'Alata', sans-serif; */
+
+}
+.Service-icon {
+  height: 4em;
+  width: 4em;
+  border: solid rebeccapurple 1px;
+  border-radius: 100px;
+  background: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+
+
+.swiper-pagination {
+  position: static;
+  padding-top: 2rem;
+  position:  relative !important;
+}
+.swiper-pagination-bullet {
+  /* background: rgb(203, 213, 224) !important; */
+  width: 10px !important;
+  height: 10px !important;
+  margin-right: 8px !important;
+  margin-top: 3rem;
+}
+.swiper-pagination-bullet-active {
+  background-color: rebeccapurple !important;
+  border: solid 1px rebeccapurple !important;
+}
+
+
+@media only screen and (max-width:600px) {
+  .swiper-pagination-bullet {
+      width: 8px !important;
+      height: 8px !important;
+      margin-right: 5px !important;
+  }
+}
 @media only screen and (max-width: 992px) {
-  .swiper-button-prev {
-    color: #68187a !important;
+  .swipercard{
+      margin-top: 1.5rem;
   }
-  
-  .swiper-button-next {
-    color: #68187a !important;
-  }
+.swiper-pagination{
+  padding-top: 1rem;
+}
+.mySwiper{
+  padding-bottom: 0px !important;
+}
+.swipercontent p{
+  padding-top: .7rem;
+  font-style: italic;
+  font-size: .7rem;
+
+}
+}
+@media only screen and (max-width: 992px) {
   .DesignDevApp-img {
     margin-top: 2rem;
   }
